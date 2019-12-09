@@ -111,7 +111,7 @@ namespace Gazi.KazanMyo.DongulerApp
             //}
 
         
-
+            //
             double sayi,toplam=0;
             sbyte sayac = -1;//
             do

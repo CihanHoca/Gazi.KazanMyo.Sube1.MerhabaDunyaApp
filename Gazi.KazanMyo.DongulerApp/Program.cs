@@ -110,25 +110,60 @@ namespace Gazi.KazanMyo.DongulerApp
             //    sayi = int.Parse(Console.ReadLine());
             //}
 
-        
+
             //
-            double sayi,toplam=0;
-            sbyte sayac = -1;//
-            do
+            //double sayi,toplam=0;
+            //sbyte sayac = -1;//
+            //do
+            //{
+            //    Console.WriteLine("Sayı Giriniz:");
+            //    sayi = double.Parse(Console.ReadLine());
+            //    toplam += sayi;
+            //    sayac++;
+            //} while (sayi != 0);
+
+            //Console.WriteLine($"Toplam:{toplam}\nOrtalama:{toplam/sayac}");
+
+            //Next()
+
+            //static methodlara class adıyla ulaşılır.
+
+            Random rnd = new Random();//Random classından nesne türettik.
+            byte rastgele = (byte)rnd.Next(10, 100);
+            //Console.WriteLine(rastgele);
+            //int tahmin;
+
+            //do
+            //{
+            //    Console.WriteLine("Tahmininizi giriniz:");
+            //    tahmin = int.Parse(Console.ReadLine());
+
+            //} while (tahmin!=rastgele);
+
+            //Console.WriteLine("Tebrikler!");
+
+
+            //1.hak=100 puan
+            //2.hak=70 puan
+            //3.hak=50 puan
+            //Tekrar oynamak istiyormusunuz=e/h?
+            //Tüm oyunlarda alınan puanların ortalaması.
+
+
+            for (int i = 3; i > 0; i--)
             {
-                Console.WriteLine("Sayı Giriniz:");
-                sayi = double.Parse(Console.ReadLine());
-                toplam += sayi;
-                sayac++;
-            } while (sayi != 0);
-
-            Console.WriteLine($"Toplam:{toplam}\nOrtalama:{toplam/sayac}");
-
-
-
-
-
-
+                Console.WriteLine("Tahmininizi yapınız:");
+                int tahmin = int.Parse(Console.ReadLine());
+                if (tahmin != rastgele)
+                {
+                    Console.WriteLine(i != 1 ? $"Bilemediniz. {i - 1} hakkınız kaldı.." : "Oyun Bitti.");
+                }
+                else
+                {
+                    Console.WriteLine("Tebrikler Bildiniz.");
+                    break;
+                }
+            }
 
             Console.ReadKey();
         }

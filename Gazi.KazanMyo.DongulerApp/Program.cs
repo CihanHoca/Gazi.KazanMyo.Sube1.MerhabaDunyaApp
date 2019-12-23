@@ -133,7 +133,7 @@ namespace Gazi.KazanMyo.DongulerApp
             //Console.WriteLine(rastgele);
             //int tahmin;
 
-            //do deneme
+            //do 
             //{
             //    Console.WriteLine("Tahmininizi giriniz:");
             //    tahmin = int.Parse(Console.ReadLine());
